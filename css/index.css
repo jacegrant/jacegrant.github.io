@@ -1,0 +1,28 @@
+#tetons {
+    background-image: url("../images/tetons.jpeg");
+    background-size: cover;
+}
+
+.blue {
+    color: blue;
+}
+
+.grey {
+    background-color: #bebebe
+
+}
+
+.card {
+    font-size: 6.2rem;
+    animation: pulsate 1.5s infinite alternate;
+    border: 0.2rem solid #fff;
+    border-radius: 2rem !important;
+    padding: 0.2rem;
+    padding-top: 1rem;
+    box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #4984b8, 0 0 0.8rem #4984b8, 0 0 1rem #4984b8, inset 0 0 1rem #4984b8;
+}
+
+.padTop {
+    padding-top: 2rem;
+}
+
