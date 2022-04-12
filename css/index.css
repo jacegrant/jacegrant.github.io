@@ -1,37 +1,42 @@
-#tetons {
-    background-image: url("../images/tetons.jpeg");
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../images/soccer.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     background-size: cover;
 }
 
-.blue {
-    color: blue;
+    header.masthead h1 {
+        font-size: 2.25rem;
+    }
+
+@media (min-width: 992px) {
+    header.masthead {
+        height: 100vh;
+        min-height: 40rem;
+        padding-top: 4.5rem;
+        padding-bottom: 0;
+    }
+
+        header.masthead p {
+            font-size: 1.15rem;
+        }
+
+        header.masthead h1 {
+            font-size: 3rem;
+        }
 }
 
-.grey {
-    background-color: #bebebe
-}
-
-.card {
-    font-size: 6.2rem;
-    animation: pulsate 1.5s infinite alternate;
-    border: 0.2rem solid #fff;
-    border-radius: 2rem !important;
-    padding: 0.2rem;
-    padding-top: 1rem;
-    box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #4984b8, 0 0 0.8rem #4984b8, 0 0 1rem #4984b8, inset 0 0 1rem #4984b8;
-}
-
-.padTop {
-    padding-top: 2rem;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
+@media (min-width: 1200px) {
+    header.masthead h1 {
+        font-size: 3.5rem;
+    }
 }
 
 header {
-    background: #55d6aa
+    background: white;
 }
 
     header::after {
@@ -41,7 +46,7 @@ header {
     }
 
 nav {
-    float: right
+    color: white;
 }
 
     nav ul {
@@ -52,8 +57,9 @@ nav {
 
     nav li {
         display: inline-block;
-        margin-left: 70px;
-        padding-top: 23px;
+        margin-left: 60px;
+        padding-top: 7px;
+        padding-bottom: 7px;
         position: relative;
 
     }
@@ -86,3 +92,28 @@ nav {
         width: 100%;
     }
 
+.fixed-top {
+    position: sticky !important;
+}
+
+#navbarResponsive {
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+    background-color: var(--blue-color) !important;
+}
+
+    .navbar a {
+        color: white !important;
+        font-weight: 700;
+    }
+
+        .navbar a:hover {
+            color: #a6dafc !important;
+        }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem !important;
+    padding-left: 1rem;
+}
