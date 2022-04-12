@@ -1,7 +1,7 @@
 header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 4.5rem);
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../images/soccer.jpg");
+    background: url("../images/soccer.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -100,20 +100,15 @@ nav {
     display: flex;
     justify-content: center;
 }
-.navbar {
-    background-color: var(--blue-color) !important;
+
+.nav-link {
+    color:black !important;
 }
 
-    .navbar a {
-        color: white !important;
-        font-weight: 700;
-    }
+.Marg15 {
+    margin-top: 15rem;
+}
 
-        .navbar a:hover {
-            color: #a6dafc !important;
-        }
-
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 2rem !important;
-    padding-left: 1rem;
+.EduColor {
+    background-color: white;
 }
