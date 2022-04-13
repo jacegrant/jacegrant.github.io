@@ -105,10 +105,20 @@ nav {
     color:black !important;
 }
 
-.Marg15 {
-    margin-top: 15rem;
+.CenteredName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.EduColor {
-    background-color: white;
+.Section-Heading {
+    font-size: 2.5rem;
 }
+
+.CenteredIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8rem;
+}
+
