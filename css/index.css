@@ -123,9 +123,48 @@ header {
     background-color: #435C5D;
 }
 .ExpSubHeaders {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-decoration: underline;
     font-weight: 700;
+    margin-left: 1rem;
+}
+.InfoText {
+    margin-left: 1rem;
+    font-size: 1.1rem;
+}
+.CustomBadge {
+    display: grid;
+    align-items: center;
+    background: white;
+    color: #435C5D;
+    padding: 0.4rem 0.7rem;
+    font-size: 1.3rem;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 10rem;
+    vertical-align: baseline;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s;
+    font-weight: 700;
+    justify-content: space-between;
+}
+#ExpAccordian {
+    padding-bottom: 8rem;
+}
+.accordion-button:focus {
+    box-shadow: none !important
+}
+.accordion-button:not(.collapsed) {
+    color: black !important;
+    background-color: white !important;
+    box-shadow: none !important;
+}
+#CWSHeader button {
+    display: block;
+    text-align: center;
+}
+.accordion-button {
+    font-size: 1.5rem !important;
 }
 /**/
 /**/
