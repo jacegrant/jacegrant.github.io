@@ -5,6 +5,7 @@
 .navbar a {
     color: #1B483A !important;
     font-weight: 500;
+    font-size: 1.3rem;
 }
     .navbar a:hover {
         color: #1B483A;
@@ -93,6 +94,25 @@ header {
 .Section-Heading {
     font-size: 2.5rem !important;
 }
+hr {
+    opacity: inherit !important;
+}
+.CustomBadge {
+    display: grid;
+    align-items: center;
+    background: white;
+    color: #435C5D;
+    padding: 0.4rem 0.7rem;
+    font-size: 1.3rem;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 10rem;
+    vertical-align: baseline;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s;
+    font-weight: 700;
+    justify-content: space-between;
+}
 /**/
 /**/
 /**/
@@ -132,22 +152,7 @@ header {
     margin-left: 1rem;
     font-size: 1.1rem;
 }
-.CustomBadge {
-    display: grid;
-    align-items: center;
-    background: white;
-    color: #435C5D;
-    padding: 0.4rem 0.7rem;
-    font-size: 1.3rem;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    border-radius: 10rem;
-    vertical-align: baseline;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s;
-    font-weight: 700;
-    justify-content: space-between;
-}
+
 #ExpAccordian {
     padding-bottom: 8rem;
 }
@@ -155,18 +160,51 @@ header {
     box-shadow: none !important
 }
 .accordion-button:not(.collapsed) {
-    color: black !important;
-    background-color: white !important;
+    color: white !important;
+    background: #435C5D !important;
     box-shadow: none !important;
 }
 #CWSHeader button {
     display: block;
     text-align: center;
+    font-weight: bold;
+    color: #435C5D !important;
+    background: white !important
 }
 .accordion-button {
     font-size: 1.5rem !important;
 }
+.accordion-body {
+    font-size: 1.4rem
+}
+#Experience ul {
+    list-style-type: none;
+}
+#Experience ul li::before {
+    content: "\f1e3";
+    font-family: "Font Awesome 5 Free";
+    margin-right: .5rem;
+}
+.accordion-header button {
+    font-weight: bold;
+    color: #435C5D;
+}
+.accordian hr {
+    color: #435C5D;
+    display: none !important;
+}
 /**/
 /**/
 /**/
 /**/
+/*Skills*/
+.SkillsColor {
+    background-color: #95AFBD !important;
+}
+
+.card-container .card {
+    border: none;
+    border-top-style: solid;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    margin: 0 1rem 0 1rem;
+}
