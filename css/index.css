@@ -2,14 +2,17 @@
 #navbarResponsive {
     justify-content: center;
 }
+
 .navbar a {
     color: #1B483A !important;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
+
     .navbar a:hover {
         color: #1B483A;
     }
+
 nav a::after {
     content: '';
     display: block;
@@ -19,20 +22,24 @@ nav a::after {
     width: 0%;
     transition: all ease-in-out 250ms;
 }
+
 nav a:hover::after {
     width: 100%;
 }
+
 nav li {
     display: inline-block;
     position: relative;
     text-align: center;
 }
+
 a.nav-link {
     border-radius: .7rem;
 }
+
     a.nav-link.active {
         background-color: #1B483A;
-        color:white !important;
+        color: white !important;
     }
 /**/
 /**/
@@ -48,9 +55,11 @@ header.masthead {
     background-attachment: scroll;
     background-size: cover;
 }
+
     header.masthead h1 {
         font-size: 2.25rem;
     }
+
 @media (min-width: 992px) {
     header.masthead {
         height: 100vh;
@@ -58,21 +67,26 @@ header.masthead {
         padding-top: 4.5rem;
         padding-bottom: 0;
     }
+
         header.masthead p {
             font-size: 1.15rem;
         }
+
         header.masthead h1 {
             font-size: 3rem;
         }
 }
+
 @media (min-width: 1200px) {
     header.masthead h1 {
         font-size: 3.5rem;
     }
 }
+
 header {
     background: white;
 }
+
     header::after {
         content: '';
         display: table;
@@ -86,17 +100,21 @@ header {
 .fixed-top {
     position: sticky !important;
 }
+
 .CenteredName {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .Section-Heading {
     font-size: 2.5rem !important;
 }
+
 hr {
     opacity: inherit !important;
 }
+
 .CustomBadge {
     display: grid;
     align-items: center;
@@ -125,14 +143,20 @@ hr {
     font-size: 8rem;
     color: #435C5D;
 }
+
 .EduTextColor {
-    color: #435C5D;
+    color: black;
     font-size: 1.1rem;
 }
+
 .EduSubHeaders {
-    color: #435C5D;
+    color: black;
     font-size: 1.3rem;
     text-decoration: underline;
+}
+
+#Education {
+    margin-bottom: 4rem;
 }
 /**/
 /**/
@@ -140,14 +164,16 @@ hr {
 /**/
 /*EXPERIENCE*/
 .ExpColor {
-    background-color: #435C5D;
+    background-color: #657372d1;
 }
+
 .ExpSubHeaders {
     font-size: 1.5rem;
     text-decoration: underline;
     font-weight: 700;
     margin-left: 1rem;
 }
+
 .InfoText {
     margin-left: 1rem;
     font-size: 1.1rem;
@@ -156,41 +182,50 @@ hr {
 #ExpAccordian {
     padding-bottom: 8rem;
 }
+
 .accordion-button:focus {
     box-shadow: none !important
 }
+
 .accordion-button:not(.collapsed) {
     color: white !important;
-    background: #435C5D !important;
+    background: #657372d1 !important;
     box-shadow: none !important;
 }
+
 #CWSHeader button {
     display: block;
     text-align: center;
     font-weight: bold;
-    color: #435C5D !important;
+    color: black !important;
     background: white !important
 }
+
 .accordion-button {
     font-size: 1.5rem !important;
 }
+
 .accordion-body {
     font-size: 1.4rem
 }
+
 #Experience ul {
     list-style-type: none;
 }
-#Experience ul li::before {
-    content: "\f1e3";
-    font-family: "Font Awesome 5 Free";
-    margin-right: .5rem;
-}
+
+    #Experience ul li::before {
+        content: "\f1e3";
+        font-family: "Font Awesome 5 Free";
+        margin-right: .5rem;
+    }
+
 .accordion-header button {
     font-weight: bold;
-    color: #435C5D;
+    color: black;
 }
+
 .accordian hr {
-    color: #435C5D;
+    color: black;
     display: none !important;
 }
 /**/
@@ -198,13 +233,76 @@ hr {
 /**/
 /**/
 /*Skills*/
+.card-container {
+    display: grid !important;
+    justify-content: center;
+    grid-template-columns: repeat( auto-fit, 125px );
+    grid-column-gap: 100px;
+}
 .SkillsColor {
     background-color: #95AFBD !important;
+}
+
+.CenterPls {
+    margin-left: -2.3rem !important;
 }
 
 .card-container .card {
     border: none;
     border-top-style: solid;
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
-    margin: 0 1rem 0 1rem;
+   width: 13rem;
+    height: 14rem;
+    margin:.5rem 0 0 0;
+}
+
+#SkillsDiv .card:hover {
+    transform: scale(1.2);
+}
+
+.Card-Body h4 {
+    font-weight: bold;
+}
+
+#html {
+    margin-left: .6rem;
+}
+
+#css {
+    margin-left: -.8rem;
+}
+
+#bootstrap {
+    width: 90% !important;
+    margin: 1.9rem 1rem 1rem .6rem;
+}
+
+#csharp {
+    width: 90% !important;
+    margin: .3rem 0rem .3rem .6rem;
+}
+
+#sql {
+    width: 90% !important;
+    margin: 0.5rem;
+}
+
+#vs {
+    width: 90% !important;
+    margin: 0.5rem;
+}
+
+#vscode {
+    width: 90% !important;
+    margin: 0.5rem;
+}
+
+#snow {
+    width: 90% !important;
+    margin: 0.5rem;
+}
+
+#teams {
+    width: 90% !important;
+    margin: 0.5rem;
 }
