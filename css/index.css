@@ -237,8 +237,10 @@ hr {
     display: grid !important;
     justify-content: center;
     grid-template-columns: repeat( auto-fit, 125px );
+    grid-template-rows: repeat( auto-fit, 250px );
     grid-column-gap: 100px;
 }
+
 .SkillsColor {
     background-color: #95AFBD !important;
 }
@@ -251,9 +253,9 @@ hr {
     border: none;
     border-top-style: solid;
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
-   width: 13rem;
+    width: 13rem;
     height: 14rem;
-    margin:.5rem 0 0 0;
+    margin: .5rem 0 0 0;
 }
 
 #SkillsDiv .card:hover {
