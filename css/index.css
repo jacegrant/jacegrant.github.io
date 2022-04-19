@@ -169,6 +169,13 @@ hr {
     background-color: var(--MainCol)
 }
 
+#EduAccordian {
+    padding-bottom: 8rem;
+}
+#EduAccordian a {
+    color: var(--MainCol);
+}
+
 /**/
 /**/
 /**/
@@ -188,10 +195,6 @@ hr {
 .InfoText {
     margin-left: 1rem;
     font-size: 1.1rem;
-}
-
-#ExpAccordian {
-    padding-bottom: 8rem;
 }
 
 .accordion-button:focus {
