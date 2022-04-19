@@ -1,3 +1,10 @@
+:root {
+    --bcg: url("../images/cool-background.png");
+    --EXPCol: #2362e4;
+    --SkillCol: #2362e4b5;
+    --EDUCol: #2362e461;
+}
+
 /*NAVBAR*/
 #navbarResponsive {
     justify-content: center;
@@ -49,7 +56,7 @@ a.nav-link {
 header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 4.5rem);
-    background: url("../images/soccer.jpg");
+    background: var(--bcg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -132,6 +139,12 @@ hr {
     font-weight: 700;
     justify-content: space-between;
 }
+.pt {
+    padding-top: 2.5rem;
+}
+.pb {
+    padding-bottom: 2rem;
+}
 /**/
 /**/
 /**/
@@ -142,22 +155,29 @@ hr {
     align-items: center;
     justify-content: center;
     font-size: 8rem;
-    color: #435C5D;
+    color: white;
 }
 
 .EduTextColor {
-    color: black;
+    color: white;
     font-size: 1.1rem;
 }
 
 .EduSubHeaders {
-    color: black;
+    color: white;
     font-size: 1.3rem;
     text-decoration: underline;
 }
 
 #Education {
-    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    background-color: var(--EDUCol);
+}
+.EduDiv {
+    background-color: var(--EDUCol);
+}
+.EduDiv hr {
+    color: white;
 }
 /**/
 /**/
@@ -165,7 +185,7 @@ hr {
 /**/
 /*EXPERIENCE*/
 .ExpColor {
-    background-color: #657372d1;
+    background-color: var(--EXPCol);
 }
 
 .ExpSubHeaders {
@@ -190,7 +210,7 @@ hr {
 
 .accordion-button:not(.collapsed) {
     color: white !important;
-    background: #657372d1 !important;
+    background: var(--EXPCol) !important;
     box-shadow: none !important;
 }
 
@@ -198,7 +218,7 @@ hr {
     display: block;
     text-align: center;
     font-weight: bold;
-    color: black !important;
+    color: var(--EXPCol) !important;
     background: white !important
 }
 
@@ -207,7 +227,8 @@ hr {
 }
 
 .accordion-body {
-    font-size: 1.4rem
+    font-size: 1.4rem;
+    color: var(--EXPCol)
 }
 
 #Experience ul {
@@ -218,15 +239,16 @@ hr {
         content: "\f1e3";
         font-family: "Font Awesome 5 Free";
         margin-right: .5rem;
+        color: var(--EXPCol);
     }
 
 .accordion-header button {
     font-weight: bold;
-    color: black;
+    color: var(--EXPCol);
 }
 
 .accordian hr {
-    color: black;
+    color: var(--EXPCol);
     display: none !important;
 }
 /**/
@@ -241,7 +263,7 @@ hr {
     grid-column-gap: 100px;
 }
 .SkillsColor {
-    background-color: #95AFBD !important;
+    background-color: var(--SkillCol) !important;
 }
 
 .CenterPls {
