@@ -1,3 +1,6 @@
+:root {
+    --MainCol: #184136e0;
+}
 /*NAVBAR*/
 #navbarResponsive {
     justify-content: center;
@@ -131,40 +134,47 @@ hr {
     font-weight: 700;
     justify-content: space-between;
 }
+.pt {
+    padding-top: 3rem;
+}
+.pb {
+    padding-bottom: 3rem;
+}
 /**/
 /**/
 /**/
 /**/
 /*EDU*/
 .CenteredIcons {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    display: flex;
+    justify-content: end;
     font-size: 8rem;
-    color: #435C5D;
+    color: black;
 }
 
 .EduTextColor {
-    color: black;
+    color: white;
     font-size: 1.1rem;
 }
 
 .EduSubHeaders {
-    color: black;
+    color: white;
     font-size: 1.3rem;
     text-decoration: underline;
 }
 
-#Education {
-    margin-bottom: 4rem;
+.EduColor {
+    background-color: var(--MainCol)
 }
+
 /**/
 /**/
 /**/
 /**/
 /*EXPERIENCE*/
 .ExpColor {
-    background-color: #657372d1;
+    background-color: var(--MainCol);
 }
 
 .ExpSubHeaders {
@@ -189,7 +199,7 @@ hr {
 
 .accordion-button:not(.collapsed) {
     color: white !important;
-    background: #657372d1 !important;
+    background: var(--MainCol) !important;
     box-shadow: none !important;
 }
 
@@ -242,7 +252,7 @@ hr {
 }
 
 .SkillsColor {
-    background-color: #95AFBD !important;
+    background-color: var(--MainCol) !important;
 }
 
 .CenterPls {
@@ -305,6 +315,10 @@ hr {
 }
 
 #teams {
+    width: 90% !important;
+    margin: 0.5rem;
+}
+.CommonPics {
     width: 90% !important;
     margin: 0.5rem;
 }
