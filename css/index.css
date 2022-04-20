@@ -1,5 +1,6 @@
 :root {
-    --MainCol: #184136e0;
+    --MainCol: #616161;
+    --SmallCol: red;
 }
 /*NAVBAR*/
 #navbarResponsive {
@@ -13,14 +14,14 @@
 }
 
     .navbar a:hover {
-        color: #1B483A;
+        color: var(--MainCol);
     }
 
 nav a::after {
     content: '';
     display: block;
     height: 2px;
-    background-color: #1B483A;
+    background-color: var(--MainCol);
     position: relative;
     width: 0%;
     transition: all ease-in-out 250ms;
@@ -41,7 +42,7 @@ a.nav-link {
 }
 
     a.nav-link.active {
-        background-color: #1B483A;
+        background-color: var(--MainCol);
         color: white !important;
     }
 /**/
@@ -52,7 +53,7 @@ a.nav-link {
 header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 4.5rem);
-    background: url("../images/soccer.jpg");
+    background: url("../images/meSoc7.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -111,6 +112,11 @@ header {
     max-height: 70vh;
 }
 
+.innerName {
+    display: grid !important;
+    justify-content: end;
+}
+
 .Section-Heading {
     font-size: 2.5rem !important;
 }
@@ -135,11 +141,17 @@ hr {
     font-weight: 700;
     justify-content: space-between;
 }
+
 .pt {
     padding-top: 3rem;
 }
+
 .pb {
     padding-bottom: 3rem;
+}
+
+body {
+    font-family: 'Anek Devanagari', sans-serif !important;
 }
 /**/
 /**/
@@ -172,18 +184,24 @@ hr {
 #EduAccordian {
     padding-bottom: 8rem;
 }
-#EduAccordian a {
-    color: var(--MainCol);
-}
 
-/**/
-/**/
-/**/
-/**/
-/*EXPERIENCE*/
-.ExpColor {
-    background-color: var(--MainCol);
-}
+    #EduAccordian a {
+        color: var(--MainCol);
+    }
+    #EduAccordian .accordion-button:not(.collapsed)::after {
+        background-image: none;
+    }
+    #EduAccordian button {
+        cursor: default;
+    }
+    /**/
+    /**/
+    /**/
+    /**/
+    /*EXPERIENCE*/
+    .ExpColor {
+        background-color: var(--MainCol);
+    }
 
 .ExpSubHeaders {
     font-size: 1.5rem;
@@ -252,7 +270,7 @@ hr {
     justify-content: center;
     grid-template-columns: repeat( auto-fit, 125px );
     grid-template-rows: repeat( auto-fit, 250px );
-    grid-column-gap: 100px;
+    grid-column-gap: 102px;
 }
 
 .SkillsColor {
@@ -271,7 +289,9 @@ hr {
     height: 14rem;
     margin: .5rem 0 0 0;
 }
-
+#SkillsDiv .card {
+    transition: all .3s ease-in-out;
+}
 #SkillsDiv .card:hover {
     transform: scale(1.2);
 }
@@ -322,7 +342,25 @@ hr {
     width: 90% !important;
     margin: 0.5rem;
 }
+
 .CommonPics {
     width: 90% !important;
     margin: 0.5rem;
+}
+
+/*
+MEDIA QUERY
+*/
+@media only screen and (max-width: 767px) {
+    .innerName strong {
+        color: var(--SmallCol)
+    }
+
+    .innerName p {
+        color: var(--SmallCol) !important
+    }
+
+    .innerName a {
+        color: var(--SmallCol)
+    }
 }
