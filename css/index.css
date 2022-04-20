@@ -152,6 +152,10 @@ hr {
 body {
     font-family: 'Anek Devanagari', sans-serif !important;
 }
+
+.Toggler {
+    background-color: var(--MainCol) !important
+}
 /**/
 /**/
 /**/
