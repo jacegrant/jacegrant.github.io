@@ -1,7 +1,9 @@
 :root {
-/*    --MainCol: #616161;
-*/    --MainCol: #23324c;
-    --SmallCol:  #23324c;
+    /*    --MainCol: #616161;
+*/ /*--MainCol: #23324c;*/
+/*    --MainCol: #23324cbf;*/
+    --MainCol: #23324c9c;
+    --SmallCol: #23324c;
 }
 /*NAVBAR*/
 #navbarResponsive {
