@@ -1,6 +1,7 @@
 :root {
-    --MainCol: #616161;
-    --SmallCol: red;
+/*    --MainCol: #616161;
+*/    --MainCol: #23324c;
+    --SmallCol:  #23324c;
 }
 /*NAVBAR*/
 #navbarResponsive {
@@ -152,6 +153,18 @@ hr {
 
 body {
     font-family: 'Anek Devanagari', sans-serif !important;
+}
+
+.Toggler {
+    background-color: var(--MainCol) !important
+}
+
+#Email {
+    margin-right: .5rem;
+}
+
+#LinkedIn {
+    margin-left: .5rem;
 }
 /**/
 /**/
@@ -364,3 +377,5 @@ MEDIA QUERY
         color: var(--SmallCol)
     }
 }
+
+       
