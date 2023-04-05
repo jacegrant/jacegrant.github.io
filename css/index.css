@@ -11,7 +11,7 @@
 }
 
 .navbar a {
-    color: #1B483A !important;
+    color: #23324c9c !important;
     font-weight: 500;
     font-size: 1.1rem;
 }
@@ -28,6 +28,7 @@ nav a::after {
     position: relative;
     width: 0%;
     transition: all ease-in-out 250ms;
+    color: #23324c9c !important
 }
 
 nav a:hover::after {
@@ -366,7 +367,7 @@ body {
 /*
 MEDIA QUERY
 */
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
     .innerName strong {
         color: var(--SmallCol)
     }
@@ -378,6 +379,6 @@ MEDIA QUERY
     .innerName a {
         color: var(--SmallCol)
     }
-}
+} */
 
        
