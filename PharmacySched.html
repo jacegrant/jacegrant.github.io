@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jace Grant Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/index.css">
+
+    </head>
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html/#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html/#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html/#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html/#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro AUFSTC-intro">
+            <h1 class="section__title section__title--intro">
+                Pharmacy Scheduler
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">A website made for scheduling vacccines/tests</p>
+            <img src="images/AubieAndClinic.jpeg" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>During the early stages of the Covid pandemic, Campus Web Solutions was asked to create a web application for students and faculty members
+                to schedule Covid testing appointments when needed. Covid vaccines, Flu testing and vaccines, and many other test/vaccines would later be
+                implemented. This applicatin would then be opened to the public which increased traffic tremendously. To help with speeds, we transformed
+                lengthy C# code into SQL stored procedures and refactored code to maintain adequate wait and load times.</p>
+            <img src="images/ScheduleAppt.png" alt="Website page showing frequently asked questions">
+            <img src="images/ConfirmationAppt.png" alt="Website page showing frequently asked questions">
+            <img src="images/RescheduleAppt.png" alt="Website page showing frequently asked questions">
+            <p>I utilized HTML, CSS, and Bootstrap for the view of this page and Javascript, jQuery, Ajax, C#, Linq, and Entity Framework for the 
+                managing of appointments and getting that information to and from the database. To avoid users from scheduling the same appointments, I
+                implemented database transactions in which whoever sent their appointment request first, there would be a lock on all database tables involved
+                and that initial appointment would be created for that first request, and if there was another user that requested the same appointment, they
+                would see a small message indicating that the appointment selected was just filled and asked to select another time slot.
+            </p>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:jace.grant122@gmail.com" class="footer__link">jace.grant122@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/jace-grant-35b3781a2/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/jacegrant">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:jace.grant122@gmail.com">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
