@@ -31,20 +31,25 @@
 
         <section class="intro AUFSTC-intro">
             <h1 class="section__title section__title--intro">
-                Football Tickets
+                Pharmacy Scheduler
             </h1>
-            <p class="section__subtitle section__subtitle--intro">A way for students to manage their tickets</p>
-            <img src="images/AUFootball.png" alt="" class="intro__img">
+            <p class="section__subtitle section__subtitle--intro">A website made for scheduling vacccines/tests</p>
+            <img src="images/AubieAndClinic.jpeg" alt="" class="intro__img">
         </section>
         
         <div class="portfolio-item-individual">
-            <p>Auburn University Football Student Ticketing System (AUFSTC) is a web application used by students to request tickets, give their tickets away, request 
-                guest passes, manage their penalty points, and a lot more regarding their football tickets. With a lot of information on the site, the Atheletic department
-                would always get repeated questions so they came to Campus Web Solutions to add a FAQ page to streamline these questions and answers. </p>
-            <img src="images/AUFSTC-FAQs.png" alt="Website page showing frequently asked questions">
-            <p>I utilized HTML, CSS, and Javascript to create this page. The FAQ's are held in BootStrap's accordians and can be opened/closed on click.</p>
-            <p>What you are seeing is the non-admin view of the FAQ's. The admin view has the ability to edit these questions on the page and then that edited information
-                is sent back to the controller through Javascript and ajax, then put into the database tabled called tblQuestion using C#, SQL, and Entity Framework.
+            <p>During the early stages of the Covid pandemic, Campus Web Solutions was asked to create a web application for students and faculty members
+                to schedule Covid testing appointments when needed. Covid vaccines, Flu testing and vaccines, and many other test/vaccines would later be
+                implemented. This applicatin would then be opened to the public which increased traffic tremendously. To help with speeds, we transformed
+                lengthy C# code into SQL stored procedures and refactored code to maintain adequate wait and load times.</p>
+            <img src="images/ScheduleAppt.png" alt="Website page showing frequently asked questions">
+            <img src="images/ConfirmationAppt.png" alt="Website page showing frequently asked questions">
+            <img src="images/RescheduleAppt.png" alt="Website page showing frequently asked questions">
+            <p>I utilized HTML, CSS, and Bootstrap for the view of this page and Javascript, jQuery, Ajax, C#, Linq, and Entity Framework for the 
+                managing of appointments and getting that information to and from the database. To avoid users from scheduling the same appointments, I
+                implemented database transactions in which whoever sent their appointment request first, there would be a lock on all database tables involved
+                and that initial appointment would be created for that first request, and if there was another user that requested the same appointment, they
+                would see a small message indicating that the appointment selected was just filled and asked to select another time slot.
             </p>
         </div>
         
