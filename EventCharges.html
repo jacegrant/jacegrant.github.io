@@ -32,27 +32,24 @@
 
         <section class="intro AUFSTC-intro">
             <h1 class="section__title section__title--intro">
-                Pharmacy Scheduler
+                Event Charges
             </h1>
-            <p class="section__subtitle section__subtitle--intro">A website made for scheduling vacccines/tests</p>
-            <img src="images/AubieAndClinic.jpeg" alt="" class="intro__img">
+            <p class="section__subtitle section__subtitle--intro">A page for admin to charge users</p>
+            <img src="images/Charges.jpeg" alt="" class="intro__img">
         </section>
         
         <div class="portfolio-item-individual">
-            <p>During the early stages of the Covid pandemic, Campus Web Solutions was asked to create a web application for students and faculty members
-                to schedule Covid testing appointments when needed. Covid vaccines, Flu testing and vaccines, and many other test/vaccines would later be
-                added. This applicatin would then be opened to the public which increased traffic tremendously. To help with speeds, we transformed
-                lengthy C# code into SQL stored procedures and refactored code to maintain adequate wait and load times.</p>
-            <img src="images/ScheduleAppt.png" alt="Website page showing frequently asked questions">
-            <img src="images/ConfirmationAppt.png" alt="Website page showing frequently asked questions">
-            <img src="images/RescheduleAppt.png" alt="Website page showing frequently asked questions">
-            <p>I utilized HTML, CSS, and Bootstrap for the view of this page and Javascript, jQuery, Ajax, C#, Linq, and Entity Framework for the 
-                managing of appointments and getting that information to and from the view, controller, and database. To avoid users from scheduling 
-                the same appointments, I implemented database transactions so whoever sent their appointment request first, there would be a lock on all 
-                database tables involved and that initial appointment would be created for that first request, and if there was another user that requested
-                the same appointment, they would see a small message indicating that the appointment selected was just filled and asked to select another 
-                time slot.
+            <p>This page allows for admin to apply ticket/parking pass charges for users. Once the admin has picked a user to view, the data table 
+                is populated with the tickets and parking passes assigned to that user and they have the ability to add any of those to the cart. Once
+                added, they are viewable in the slide out cart where you can see the overall prices and confirm the charges or send those prices to
+                touchnet if they had not paid yet.
             </p>
+            <img src="images/ChargesPic1.png" alt="Picture showing the table and tickets eligible to be charged">
+            <img src="images/ChargesPic2.png" alt="Picture showing the slide out cart that allows you to see the charges and confirm them">
+            <p>Again I made the view is made with HTML, CSS, Bootstrap with Javascript and jQuery controlling most of the cart and datatable features.
+                The tickets and parking passes are sent to the controller using Javascript, jQuery, and Ajax and then handled with C#, Linq, 
+                SQL, and Entity Framework to log the charges and place the transactions in the database. The Touchnet API is used to help assign the charges
+                to the correct user and the correct price. </p>
         </div>
         
         
@@ -77,7 +74,6 @@
                 </li>
             </ul>
         </footer>
-        
         
         <script src="js/index.js"></script>
         

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jace Grant Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/index.css">
+
+    </head>
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="index.html#experiences" class="nav__link">Experienced With</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro AUFSTC-intro">
+            <h1 class="section__title section__title--intro">
+                Event Ticketing
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Record Auditing system </p>
+            <img src="images/Audit.jpeg" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>Event Ticketing allows for organizations within the university to upload and transfer event tickets and parking passes
+                to one another. After each transfer and upload, a log is created. These logs serve as audit logs allowing for each ticket 
+                or parking pass to be kept account of.
+            </p>
+            <p>The page I created, shown below, lets an admin upload tickets or parking passes in bulk through the use of a csv file. The user
+                selects the game(s), shown in the datatable, that they want to upload the records and is then taken through a popup "wizard" 
+                that instructs the user on each step of the process. Once the user is ready to upload the csv file of records, it is validated 
+                and the user is provided with the errors in the file and where they are, if any. When correct, the records are uploaded and put into
+                the database for future use.
+            </p>
+            <img src="images/TixPic1.png" alt="Website page showing frequently asked questions">
+            <img src="images/TixPic2.png" alt="Website page showing frequently asked questions">
+            <div class="tix-wizard">
+                <img src="images/TixPic3.png" alt="Website page showing frequently asked questions">
+                <img src="images/TixPic4.png" alt="Website page showing frequently asked questions">
+                <img src="images/TixPic5.png" alt="Website page showing frequently asked questions">
+                <img src="images/TixStep3.png" alt="Website page showing frequently asked questions">
+                <img src="images/TixPic6.png" alt="Website page showing frequently asked questions">
+                <img src="images/TixPic7.png" alt="Website page showing frequently asked questions">
+            </div>  
+            <p>I utilized HTML, CSS, Bootstrap, and Javascript to create this view. The csv is parsed with the help of a library named Papaparse. 
+                The records are sent to the controller using Javascript, jQuery and Ajax and they are then handled with the help of C#, Linq, SQL and
+                Entity Framework.
+            </p>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:jace.grant122@gmail.com" class="footer__link">jace.grant122@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/jace-grant-35b3781a2/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/jacegrant" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:jace.grant122@gmail.com">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
