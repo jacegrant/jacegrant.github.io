@@ -543,7 +543,7 @@ header {
 
 /* AUFSTC page */
 .portfolio-item-individual {
-    padding: 0 2em 2em;
+    padding: 0 2em 1em;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -552,4 +552,8 @@ header {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.AUFSTC-intro {
+    padding: 1em 1em !important;
 }
