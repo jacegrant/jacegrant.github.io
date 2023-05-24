@@ -275,6 +275,10 @@ header {
 
 
     }
+
+    img {
+        box-shadow: var(--bs);
+    } 
 }
 
 .introMarg {
