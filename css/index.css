@@ -380,6 +380,7 @@ header {
         grid-area: img;
         position: relative;
         z-index: 2;
+        max-width: 125%;
     }
 
 }
