@@ -13,7 +13,7 @@
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #e96f6f;
+    --clr-accent: #6fb8e9;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -294,7 +294,7 @@ header {
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(../images/Oak1.jpg);
+    background-image: url(../images/services-bg.jpg);
     background-size: cover;
     background-blend-mode: multiply;
     color: var(--clr-light);
@@ -302,7 +302,7 @@ header {
 }
 
 .section__title--services {
-    color: var(--clr-light);
+    color: var(--clr-accent);
     position: relative;
 }
 
@@ -332,7 +332,6 @@ header {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 76em;
     }
 
     .service + .service {
@@ -596,9 +595,4 @@ header {
 .tix-wizard img {
     box-shadow: var(--bs);
     padding: 1rem;
-}
-
-
-.oakpic {
-    max-width: 100% !important;
 }
